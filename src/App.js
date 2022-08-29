@@ -1,5 +1,5 @@
 
-import Pokedex from './Pokedex.js';
+import Pokegame from './Pokegame.js';
 import './App.css';
 
 const pokemonList = [
@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <h1>Pokedex</h1>
       <br />
-      <Pokedex pokemonArray={pokemonList} />
+      <Pokegame pokemonArray={pokemonList} />
     </div>
   );
 }

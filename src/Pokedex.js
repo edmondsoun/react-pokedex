@@ -1,6 +1,6 @@
 import Pokecard from './Pokecard.js';
 
-function Pokedex({ pokemonArray }) {
+function Pokedex({ pokemonArray, totalExp, isWinner }) {
 
     const pokedexStyle = {
         display: "flex",
@@ -17,6 +17,7 @@ function Pokedex({ pokemonArray }) {
                 type={p.type}
                 base_experience={p.base_experience}
             />)}
+            <b>{isWinner ? `This hand wins with ${totalExp} exp!` : ''}</b>
         </div>
     )
 
